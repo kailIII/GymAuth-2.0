@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
@@ -75,7 +76,7 @@ public class User implements Serializable {
     }
     
     @OneToOne
-    @Column(name="userDetailId", nullable=false)
+    @JoinColumn(name="userDetailId", nullable=false)
     public UserDetail getUserDetail() {
         return this.userDetail;
     }

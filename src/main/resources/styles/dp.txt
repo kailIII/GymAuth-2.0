@@ -1,0 +1,8 @@
+mvn install:install-file -Dfile=dpfpenrollment.jar -DgroupId=com.digitalpersona.onetouch -DartifactId=dpfpenrollment -Dversion=1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=dpfpverification.jar -DgroupId=com.digitalpersona.onetouch -DartifactId=dpfpverification -Dversion=1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=dpotapi.jar -DgroupId=com.digitalpersona.onetouch -DartifactId=dpotapi -Dversion=1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=dpotjni.jar -DgroupId=com.digitalpersona.onetouch -DartifactId=dpotjni -Dversion=1.0 -Dpackaging=jar
+

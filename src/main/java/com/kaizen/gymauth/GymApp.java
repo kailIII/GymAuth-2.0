@@ -1,54 +1,37 @@
 package com.kaizen.gymauth;
 
+import com.kaizen.gymauth.controller.gym.GymController;
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class GymApp extends Application {
     
-    private double xOffset = 0;
-    private double yOffset = 0;
-    
     @Override
     public void start(final Stage stage) throws Exception {
         
-        Parent root = FXMLLoader.load(getClass().getResource("/view/main/GymAuth.fxml"));
-        
-        /*
-        root.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                xOffset = event.getSceneX();
-                yOffset = event.getSceneY();
-            }
-        });
-        
-        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                stage.setX(event.getScreenX() - xOffset);
-                stage.setY(event.getScreenY() - yOffset);
-            }
-        });
-        */
-        
-        Scene scene = new Scene(root);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/view/main/GymAuth.fxml"
+        ));
+
+        Scene scene = new Scene((Pane) loader.load());
         
         scene.getStylesheets().add("/styles/style.css");
-        stage.initStyle(StageStyle.DECORATED);
         
+        GymController gymController = loader.<GymController>getController();
+        
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.DECORATED);
         stage.setMinWidth(300.0);
         stage.setMinHeight(600.0);
-        
         stage.setTitle("GymAuth 2.0");
         stage.setScene(scene);
         stage.show();
     }
+    
 
     /**
      * The main() method is ignored in correctly deployed JavaFX application.

@@ -12,7 +12,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="362.0" style="-fx-background-color: white;" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kaizen.gymauth.controller.GymController">
+<AnchorPane id="AnchorPane" prefHeight="714.0" prefWidth="380.0" style="-fx-background-color: white;" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kaizen.gymauth.controller.gym.GymController">
     <children>
       <AnchorPane layoutX="63.0" layoutY="446.0" prefHeight="80.0" style="-fx-background-color: #3b3f40;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -43,9 +43,9 @@
       </Label>
       <HBox alignment="CENTER_RIGHT" layoutX="40.0" layoutY="508.0" prefHeight="27.0" prefWidth="283.0" spacing="5.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
          <children>
-            <Label text="Lunes, 24 de Enero">
+            <Label fx:id="dateL" prefHeight="27.0" prefWidth="206.0" text="Lunes, 24 de Enero de 2016">
                <font>
-                  <Font size="18.0" />
+                  <Font size="16.0" />
                </font>
             </Label>
             <Label text="-">
@@ -53,7 +53,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label text="23:59">
+            <Label fx:id="hourL" prefHeight="27.0" prefWidth="91.0" text="23:59 hrs">
                <font>
                   <Font size="18.0" />
                </font>
