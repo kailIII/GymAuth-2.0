@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="719.0" prefWidth="509.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kaizen.gymauth.controller.AdminController">
+    <children>
+        <AnchorPane layoutX="25.0" layoutY="14.0" prefHeight="832.0" prefWidth="752.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <ScrollPane fx:id="scrollPane" fitToWidth="true" layoutX="128.0" layoutY="-188.0" prefHeight="514.0" prefWidth="342.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="329.0" spacing="30.0" style="-fx-background-color: white;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="54.0" prefWidth="237.0" text="Registro" textFill="#00000052">
+                                    <font>
+                                        <Font name="System Bold" size="37.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="342.0" spacing="10.0">
+                                    <children>
+                                        <FontAwesomeIcon iconName="USER" size="4em">
+                                            <fill>
+                                                <LinearGradient endX="0.09523809523809523" endY="1.0" startX="0.680952380952381">
+                                                    <stops>
+                                                        <Stop color="#56d5fc" />
+                                                        <Stop color="#367fc0" offset="0.6283524904214559" />
+                                                        <Stop color="#367fc0" offset="1.0" />
+                                                    </stops>
+                                                </LinearGradient>
+                                            </fill>
+                                        </FontAwesomeIcon>
+                                        <JFXTextField fx:id="nameTF" focusColor="#86b4c2" labelFloat="true" prefHeight="40.0" prefWidth="330.0" promptText="Nombre completo">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </JFXTextField>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="342.0" spacing="10.0">
+                                            <children>
+                                                <JFXButton prefHeight="68.0" prefWidth="189.0" ripplerFill="#2099f5" style="-fx-border-color: #E0E0E0; -fx-border-width: 0.5px;" text="Huella dactilar">
+                                                    <graphic>
+                                                        <FontAwesomeIcon iconName="CHILD" size="4em" text="">
+                                                            <fill>
+                                                                <LinearGradient endX="0.09523809523809523" endY="1.0" startX="0.14761904761904765">
+                                                                    <stops>
+                                                                        <Stop color="#56d5fc" />
+                                                                        <Stop color="#367fc0" offset="0.6283524904214559" />
+                                                                        <Stop color="#2099f5" offset="1.0" />
+                                                                    </stops>
+                                                                </LinearGradient>
+                                                            </fill>
+                                                        </FontAwesomeIcon>
+                                                    </graphic>
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </JFXButton>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <VBox prefHeight="35.0" prefWidth="549.0" spacing="5.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Label text="Fecha de nacimiento:" />
+                                        <DatePicker fx:id="birthdayDP" prefHeight="25.0" prefWidth="210.0" />
+                                    </children>
+                                </VBox>
+                                <JFXComboBox focusColor="#41a9ff" prefHeight="371.0" prefWidth="436.0" promptText="Nacionalidad" />
+                                <JFXTextField focusColor="#86b4c2" labelFloat="true" prefHeight="40.0" prefWidth="157.0" promptText="Nacionalidad">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField focusColor="#86b4c2" labelFloat="true" prefHeight="40.0" prefWidth="157.0" promptText="Nacionalidad">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField focusColor="#86b4c2" labelFloat="true" prefHeight="40.0" prefWidth="157.0" promptText="Correo electrónico">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField focusColor="#86b4c2" labelFloat="true" prefHeight="40.0" prefWidth="157.0" promptText="Celular">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXButton prefHeight="45.0" prefWidth="218.0" ripplerFill="#2f9bff" style="-fx-border-color: #2099f5; -fx-border-width: 0.8px;" text="Finalizar registro">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </JFXButton>
+                            </children>
+                            <padding>
+                                <Insets bottom="20.0" top="20.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

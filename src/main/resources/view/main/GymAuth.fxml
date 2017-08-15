@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="684.0" prefWidth="362.0" style="-fx-background-color: white;" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kaizen.gymauth.controller.GymController">
+    <children>
+      <AnchorPane layoutX="63.0" layoutY="446.0" prefHeight="80.0" style="-fx-background-color: #3b3f40;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <Label alignment="CENTER" layoutX="3.0" layoutY="12.0" prefHeight="62.0" prefWidth="376.0" styleClass="label-header" text="Wolosky Auth" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <font>
+                      <Font name="System Bold" size="32.0" />
+                  </font>
+              </Label>
+         </children></AnchorPane>
+        <StackPane layoutX="65.0" layoutY="92.0" prefHeight="222.0" prefWidth="245.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+            <children>
+                <ImageView fx:id="emotionImage" fitHeight="209.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: black; -fx-border-style: solid; -fx-border-width: 5;">
+                    <image>
+                        <Image url="@../../img/user.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </StackPane>
+      <JFXButton layoutX="70.0" layoutY="403.0" prefHeight="56.0" prefWidth="237.0" style="-fx-background-color: #039BE5;" text="Abrir administrador" textFill="WHITE" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="403.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="40.0" layoutY="360.0" prefHeight="17.0" prefWidth="209.0" text="Se ha registrado una inasistencia" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" layoutX="40.0" layoutY="508.0" prefHeight="27.0" prefWidth="283.0" spacing="5.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Label text="Lunes, 24 de Enero">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="23:59">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
